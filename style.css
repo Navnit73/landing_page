@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: (var(--primary-text-color))
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*utility class*/
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.3s ease-in-out;
+}
+
+.primary {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.primary:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.3 ease-out;
+}
+
+.secondary:hover {
+    border-color: var(--accent-color);
+}
+
+
+/*top banner*/
+.top-banner {
+    background-color: #4fb3d4;
+
+}
+
+.banner-text {
+    color: white;
+    padding: 15px, 30px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-link {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/*Header*/
+
+header {
+    padding: 50px var(--padding-inline-section);
+
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-top: 20px;
+}
+
+.header-right img {
+    width: 600px;
+}
+
+.header-left a {
+    margin-top: 20px;
+}
+
+.companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logo {
+    height: 46px;
+
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/*feature section*/
+
+
+.feature-header {
+    text-align: center;
+}
+
+.feature-header a {
+    margin-bottom: 5px;
+}
+
+.feature-header h2 {
+    margin-bottom: 20px;
+}
+
+.features-section {
+    background-image: url(assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px var(--padding-inline-section)
+    
+    
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+
+}
+
+.features-area {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.features-card p {
+    text-align: center;
+}
+
+/*big-features-section*/
+
+
+.big-features-section{
+padding: 30px var(--padding-inline-section);
+}
+
+.big-features-con{
+   gap: 30px; 
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.features-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.example-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.example-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    
+    background: black;
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(assets/asset\ 36.jpeg);
+    background-size: cover;
+    transition: 0.3s ease-out;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+}
